@@ -6,6 +6,9 @@
 </head>
 <body background="GradientBeige.png">
 
+
+
+<!---------------------------------------------------->
 <title>W3.CSS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
@@ -38,3 +41,23 @@ li a {
   <h1>View Other Profiles</h1>
   <h4>See what other people are Posting. You can follow them, like their photos or even comment on them!</h4>
 </div>
+<!---------------------------------------------------->
+
+
+
+
+<h3>Search for a Specific Account or a Specific Breed:<h3><br>
+<input type="search" id="mySearch" placeholder="Search Someone...">
+<button onclick="myFunction()">Search</button>
+<script>
+function myFunction() {
+    var x = document.getElementById("mySearch").placeholder;
+    document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+<hr>
+
+<h4>List of Puppy Profiles</h4><br>
+<h5>Click on them to see part of their page</h5>
+<h5>Make an account to follow accounts and see people's full profiles</h5>
