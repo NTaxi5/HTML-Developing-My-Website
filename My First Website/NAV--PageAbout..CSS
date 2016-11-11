@@ -1,9 +1,6 @@
-li a {
-    display: block;
-    width: 264.6px;
-    background-color: #dddddd;
-}
+/*This is Takacsy's CSS Styling file*/
 
+/*This create a nice black border around all table*/
 table, th, td {
     border: 1px solid black;
 }
