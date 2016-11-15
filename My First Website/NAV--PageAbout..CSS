@@ -5,7 +5,7 @@ table, th, td {
     border: 1px solid black;
 }
 
-
+/*This gives the nav bar a little bit more colour and style*/
 nav {
     list-style-type: none;
     margin: 0;
@@ -15,12 +15,5 @@ nav {
     background-color: #dddddd;
 }
 
-#div1 {
-    width: 350px;
-    height: 70px;
-    padding: 10px;
-    border: 1px solid #aaaaaa;
-	background-color: #dddddd;
-}
 
 
