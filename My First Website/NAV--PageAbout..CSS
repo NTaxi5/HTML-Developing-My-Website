@@ -11,6 +11,16 @@ nav {
     margin: 0;
     padding: 0;
 	display: block;
-    width: 2000px;
+    width: 1300px;
     background-color: #dddddd;
 }
+
+#div1 {
+    width: 350px;
+    height: 70px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+	background-color: #dddddd;
+}
+
+
