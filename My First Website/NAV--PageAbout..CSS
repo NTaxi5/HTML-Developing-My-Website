@@ -16,4 +16,19 @@ nav {
 }
 
 
+ 
+.HPHovering { 
+    padding: 5px;
+    display: none;
+    display: block;
+}
+    
 
+
+ul li:hover {background: #555;}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: fixed;
+  width: 200px;
+  display: none;
+}
