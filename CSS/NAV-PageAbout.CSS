@@ -1,11 +1,12 @@
 /*This is Takacsy's CSS Styling file*/
 
 /*This create a nice black border around all table*/
-table, th, td {
-    border: 2px solid black;
+table, th, td{
+    border: 4px solid black;
 	border-collapse: collapse;
-	padding: 0.1px;
+	padding: 2px;
 }
+
 
 /*This gives the nav bar a little bit more colour and style*/
 nav {
@@ -18,6 +19,16 @@ nav {
 }
 
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
 
 
