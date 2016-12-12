@@ -9,25 +9,29 @@ table, th, td{
 
 
 /*This gives the nav bar a little bit more colour and style*/
-nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-	display: block;
-    width: 1300px;
-    background-color: #dddddd;
-}
-
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
+    background-color: #ff0000;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
 }
 
 
