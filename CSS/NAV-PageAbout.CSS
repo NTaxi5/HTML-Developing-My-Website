@@ -5,6 +5,10 @@ body{
 	background-color: Gainsboro;
 }
 
+.Nav2{
+	background-color: LightCyan;
+} 
+
 table, th, td{
     border: 4px solid black;
 	border-collapse: collapse;
