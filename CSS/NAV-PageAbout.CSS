@@ -2,11 +2,15 @@
 
 /*This create a nice black border around all table*/
 body{
-	background-color: Gainsboro;
+	background-color: #e1eaea;
 }
 
-.Nav2{
-	background-color: LightCyan;
+body.hp{
+	background-color: GainsBoro;
+} 
+
+body.Nav2{
+	background-color: #e6ffe6;
 } 
 
 table, th, td{
@@ -85,8 +89,11 @@ li a:hover:not(.active) {
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #7FFFD4;
+    background-color: thistle;
 }
+
+
+
 
 img.hpimg{
 	width:570px;
