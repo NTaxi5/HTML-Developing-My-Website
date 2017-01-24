@@ -1,7 +1,7 @@
 /*This is Takacsy's CSS Styling file*/
 
-/*This create a nice black border around all table*/
-body{
+/*This creates various backround colors that will be displayed on specific pages*/
+body.mp{
 	background-color: #e1eaea;
 }
 
@@ -13,11 +13,17 @@ body.Nav2{
 	background-color: #e6ffe6;
 } 
 
+
+
+
+/*This create a nice black border around all tables*/
 table, th, td{
     border: 4px solid black;
 	border-collapse: collapse;
 	padding: 2px;
 }
+
+
 
 
 /*This gives the nav bar a little bit more colour and style*/
