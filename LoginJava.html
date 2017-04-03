@@ -16,20 +16,20 @@
  <!--This prompts a username fill out-->
 	var userName=prompt("Insert Username","");
 	
-	<!--This makes sure that if you dont put in the correct username, you wont get in-->
+	<!--This makes sure that if you DONT put in the correct username, you wont get in-->
 	if (userName !== "elbow") {
       confirm("Incorrect Username")
 	}
-	<!--This makes sure that if you do put in the correct username, you'll move on to the password-->
+	<!--This makes sure that if you DO put in the correct username, you'll move on to the password-->
 	else {
 	  confirm("Correct Username! Click OK to Continue.")
 	       <!--This prompts a passowrd fill out-->
 	       var passWord = prompt("Insert Password","");
-	       <!--This makes sure that if you dont put in the correct Password, you wont get in-->
+	       <!--This makes sure that if you DONT put in the correct Password, you wont get in-->
 	       if (passWord !== "apple") {
             confirm("Incorrect Password")
 		   }
-	       <!--This makes sure that if you do put in the correct Password, you'll move on to the button-->
+	       <!--This makes sure that if you DO put in the correct Password, you'll move on to the button-->
 	       else {
 	         confirm("Correct Password! Click OK to Access your Profile.")
 			   <!--This makes sure the button lets you access the website after completing the username and password stage-->   
