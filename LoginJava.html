@@ -1,6 +1,7 @@
+ <!--This is Nick Takacsy's Login Java Page-->
 <!DOCTYPE html>
 <html>
-
+ <!--Beginning. Includes: HTML base, tab title, CSS Href and backround setting (Login Java Page)-->
 <head>
  <title>Login Page</title>
  <link rel="stylesheet" href="CSS/NAV-PageAbout.css">
@@ -9,28 +10,29 @@
  
  
  
- 
+  <!--This opens javascript coding-->
  <script language="javascript">
  
-
+ <!--This prompts a username fill out-->
 	var userName=prompt("Insert Username","");
 	
-	
+	<!--This makes sure that if you dont put in the correct username, you wont get in-->
 	if (userName !== "elbow") {
       confirm("Incorrect Username")
 	}
-	
+	<!--This makes sure that if you do put in the correct username, you'll move on to the password-->
 	else {
 	  confirm("Correct Username! Click OK to Continue.")
-	
+	       <!--This prompts a passowrd fill out-->
 	       var passWord = prompt("Insert Password","");
-	
+	       <!--This makes sure that if you dont put in the correct Password, you wont get in-->
 	       if (passWord !== "apple") {
             confirm("Incorrect Password")
 		   }
-	
+	       <!--This makes sure that if you do put in the correct Password, you'll move on to the button-->
 	       else {
 	         confirm("Correct Password! Click OK to Access your Profile.")
+			   <!--This makes sure the button lets you access the website after completing the username and password stage-->   
 			   function OpenProfile() {
                var myWindow = window.open("NAV-Taxi.html");
            }
@@ -39,11 +41,12 @@
 	
 	
 </script>
-
+ 
+ <!--This creates a button that you click on to access the website. It only works if you get the username and password correct-->
 <center>
 <h2>Click to Access Profile!</h2>
 <button onclick="OpenProfile()">Login</button>
 </center>
-
+ <!--Closes HTML file-->
 </body>
 </html>
