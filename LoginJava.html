@@ -13,40 +13,48 @@
   <!--This opens javascript coding-->
  <script language="javascript">
  
- <!--This prompts a username fill out-->
-	var userName=prompt("Insert Username","");
-	
-	<!--This makes sure that if you DONT put in the correct username, you wont get in-->
-	if (userName !== "elbow") {
-      confirm("Incorrect Username")
-	}
-	<!--This makes sure that if you DO put in the correct username, you'll move on to the password-->
-	else {
-	  confirm("Correct Username! Click OK to Continue.")
-	       <!--This prompts a passowrd fill out-->
-	       var passWord = prompt("Insert Password","");
-	       <!--This makes sure that if you DONT put in the correct Password, you wont get in-->
-	       if (passWord !== "apple") {
-            confirm("Incorrect Password")
-		   }
-	       <!--This makes sure that if you DO put in the correct Password, you'll move on to the button-->
-	       else {
-	         confirm("Correct Password! Click OK to Access your Profile.")
-			   <!--This makes sure the button lets you access the website after completing the username and password stage-->   
-			   function OpenProfile() {
-               var myWindow = window.open("NAV-Taxi.html");
-           }
+
+	 var userName = ["elbow", "takacsy", "genius"]
+	 var passWord = ["apple", "lizard", "hello"]
+	 
+	 
+	 var user = prompt("Insert Username", "")
+	 var pass = prompt("Insert Password", "")
+	 
+	 for (i = 0; i < userName.length; i++) {
+	  if (user === userName[i]){
+	  var tan = i
+	    if (pass === passWord[tan]) {
+		  confirm("Correct! Click Login to enter!")
+		  function OpenProfile() {
+          var myWindow = window.open("NAV-Taxi.html");
 	      }
-	     }
+		} 
+	  }
+	 else {
+	    confirm("Incorrect Username or Password")
+		function promptMe(){
+        var userAdjective = prompt("Unable to access profile. Reinsert CORRECT Username and Password");
+	  }
+	 }
 	
-	
+ 
+
+	    
 </script>
  
  <!--This creates a button that you click on to access the website. It only works if you get the username and password correct-->
 <center>
 <h2>Click to Access Profile!</h2>
-<button onclick="OpenProfile()">Login</button>
+<button onclick="promptMe" onclick="OpenProfile()">Login</button>
 </center>
  <!--Closes HTML file-->
 </body>
 </html>
+
+
+	 
+
+
+
+

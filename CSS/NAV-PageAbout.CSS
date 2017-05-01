@@ -16,7 +16,7 @@ body.Nav2{
 
 
 
-/*This create a nice black border around all tables*/
+/*This creates a nice black border around all tables*/
 table, th, td{
     border: 4px solid black;
 	border-collapse: collapse;
@@ -52,6 +52,7 @@ li a:hover:not(.active) {
     background-color: #7FFFD4;
     color: white;
 }
+
 
 
 
