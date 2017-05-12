@@ -1,60 +1,50 @@
- <!--This is Nick Takacsy's Login Java Page-->
+ <!--This is Nick  <!--Beginning. Includes: HTML base, tab title, CSS Href and backround setting (mackie.aussie)-->
 <!DOCTYPE html>
 <html>
- <!--Beginning. Includes: HTML base, tab title, CSS Href and backround setting (Login Java Page)-->
+ 
 <head>
- <title>Login Page</title>
+ <title>@mackie.aussie</title>
  <link rel="stylesheet" href="CSS/NAV-PageAbout.css">
 </head>
  <body class="hp">
- 
- 
- 
-  <!--This opens javascript coding-->
- <script language="javascript">
- 
 
+ <!--This opens javascript coding-->
+ <script language="javascript">
+ /*This creates an array of 3 username and password combination that are correct*/
 	 var userName = ["elbow", "takacsy", "genius"]
 	 var passWord = ["apple", "lizard", "hello"]
-	 
-	 
+ /*This created a prompt, allowing you to be able to insert your username and password*/	
 	 var user = prompt("Insert Username", "")
 	 var pass = prompt("Insert Password", "")
-	 
+	 var tan = "false"
+ /*Runs a loop to check if correct username and password were entered. Sets up parameters.*/
 	 for (i = 0; i < userName.length; i++) {
-	  if (user === userName[i]){
-	  var tan = i
-	    if (pass === passWord[tan]) {
-		  confirm("Correct! Click Login to enter!")
-		  function OpenProfile() {
-          var myWindow = window.open("NAV-Taxi.html");
-	      }
-		} 
-	  }
-	 else {
-	    confirm("Incorrect Username or Password")
-		function promptMe(){
-        var userAdjective = prompt("Unable to access profile. Reinsert CORRECT Username and Password");
-	  }
-	 }
-	
- 
-
-	    
+	  while(tan === "false"){
+	   if (user === userName[i]){
+ /*This continues the for loop after entering the right username into checking if the password is also correct*/
+	     if (pass === passWord[i]) {
+		    var tan = "true"
+		 /*This activates a confirm showing that you got the username or password right as well as changing the dynamic of the page too Mackie's Profile*/
+		    confirm("Welcome Back Mackie! Click OK to access your profile!")
+			window.open("NAV2-Mackie.AussiePR.html")   
+	     }
+	   }
+ /*This activates a confirm showing that you got the username or password wrong as well as changing the dynamic of the page too Home Page*/   
+	  else { 
+	      var tan = "true"
+		   confirm("Incorrect. Your profile will still be locked. Click Ok then Refresh Page and re-enter your CORRECT login information.");
+		   window.open("NAV-Taxi.html")
+		 }
+	   }
+     }
 </script>
+
+    
+
+	
+<!--This concludes the Html file-->
+<br>
  
- <!--This creates a button that you click on to access the website. It only works if you get the username and password correct-->
-<center>
-<h2>Click to Access Profile!</h2>
-<button onclick="promptMe" onclick="OpenProfile()">Login</button>
-</center>
- <!--Closes HTML file-->
-</body>
+ </body>
 </html>
-
-
-	 
-
-
-
 
